@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="style.css">
+    <title>Scripts de Roblox</title>
+</head>
+<body>
+    <center>
+    <h1>Scripts de Roblox</h1>
+    <hr>
+    <h3>Script para perder salud</h3>
+    <textarea cols='80' rows='4' id="codigo">
+        script.Parent.Touched:Connect(function(hit)
+        hit.Parent.Humanoid.Health=hit.Parent.Humanoid.Health - 5 
+        end)
+
+        </textarea><br>
+        <button type="button" id="copyClip" data-clipboard-target="#codigo">Copiar</button>
+        <script src="clipboard.min.js"></script>
+
+    <br><br>
+    <hr>
+    <h3>Script de súper salto</h3>
+    <textarea cols='80' rows='4' id="codigo2">
+        script.Parent.Touched:Connect(function(supersalto)
+        supersalto.Parent.Humanoid.JumpHeight=150
+        end)
+    </textarea><br>
+    <button type="button" id="bt1" class="bt1" data-clipboard-target="#codigo2">Copiar</button>
+    <script>
+    var clipboard2 = new Clipboard('.bt1');
+    </script>
+
+<br><br>
+<hr>
+<h3>Script de súper velocidad</h3>
+<textarea cols='80' rows='4' id="codigo3">
+    script.Parent.Touched:Connect(function(cuchaoo)
+      cuchaoo.Parent.Humanoid.WalkSpeed=50
+      wait (5)
+      cuchaoo.Parent.Humanoid.WalkSpeed=10
+        end)
+</textarea><br>
+<button type="button" id="bt2" class="bt2" data-clipboard-target="#codigo3">Copiar</button>
+<script>
+var clipboard2 = new Clipboard('.bt2');
+</script>
+    </center>
+    
+</body>
+</html>
